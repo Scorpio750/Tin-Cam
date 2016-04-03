@@ -3,10 +3,13 @@
 /* Controllers */
 var tincamApp = angular.module('tincamApp', []);
 
-tincamApp.controller('DropBoxCtrl', function($scope, $window) {
+tincamApp.controller('DropBoxCtrl', function($scope, $window, $q) {
 	$scope.sendToDropBox = function() {
 		$window.location.href = 'https://www.dropbox.com/1/oauth2/authorize?client_id=mmluyluwbkw0iqn&response_type=code&redirect_uri=http://localhost:3000/public/index.html';
 	};
+
+	// set up promise to handle token sessions
+	var promise
 });
 
 /* GSAP Functions */
