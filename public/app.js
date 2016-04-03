@@ -3,20 +3,9 @@
 /* Controllers */
 var tincamApp = angular.module('tincamApp', []);
 
-tincamApp.controller('DropBoxCtrl', function($scope, $http) {
+tincamApp.controller('DropBoxCtrl', function($scope, $window) {
 	$scope.sendToDropBox = function() {
-		$http({
-			method: 'GET',
-			url: 'https://www.dropbox.com/1/oauth2/authorize?client_id=mmluyluwbkw0iqn&response_type=code',
-			headers: {
-				'Authorization': 'Bearer Z4vDR255Iw8AAAAAAAACA5r_OpGmRaDpkaEzjsN2xC-GKDrOUowLLjyEmX-NKXtl'
-			},
-			redirect_uri: 'https://www.dropbox.com/*'
-		}).then(function mySuccess(response) {
-			console.log(response.data);
-		}, function myError(response) {
-			console.log(response.statusText);
-		});
+		$window.location.href = 'https://www.dropbox.com/1/oauth2/authorize?client_id=mmluyluwbkw0iqn&response_type=code&redirect_uri=http://localhost:3000/public/index.html';
 	};
 });
 

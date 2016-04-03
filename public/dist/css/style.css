@@ -1,11 +1,7 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../src/img/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
 /* VARIABLES */
+/* SELECTORS */
 html {
-  font-family: Roboto, Tahoma, Arial, sans-serif; }
+  font-family: Tahoma, Arial, sans-serif; }
 
 body {
   background-color: aliceblue;
@@ -14,6 +10,7 @@ body {
 
 h1 {
   text-align: center;
+  padding: .1em;
   flex: 1 0 auto;
   font-family: Plaster;
   box-shadow: 10px 10px 10px 10px;
@@ -34,7 +31,7 @@ h1 {
 
 .circle {
   flex: 99 0 auto;
-  margin: 20vh 10vw;
+  margin: 15vh 10vw;
   justify-content: center;
   padding: 0 5em;
   border: 1px dotted #528ED5;
