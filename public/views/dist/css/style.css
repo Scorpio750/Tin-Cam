@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../src/img/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* VARIABLES */
+html {
+  font-family: Roboto, Tahoma, Arial, sans-serif; }
+
 body {
   background-color: aliceblue;
   font-size: 20px;
@@ -21,7 +30,7 @@ button {
   border: 0;
   cursor: grab;
   color: white;
-  background-color: cadetblue;
+  background-color: #528ED5;
   border-radius: 0.5em;
   cursor: pointer;
   transition: 0.2s all linear; }

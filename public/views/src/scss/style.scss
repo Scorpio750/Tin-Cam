@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../src/img/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* VARIABLES */
+$dropbox-blue: #528ED5;
+$font-stack: Roboto, Tahoma, Arial, sans-serif;
+
+html{
+	font-family: $font-stack;
+}
+
 body {
 	background-color: aliceblue;
 	font-size: 20px;
@@ -13,7 +28,7 @@ body {
 	min-height: 100vh;
 }
 .fa-dropbox {
-	color: #528ED5;
+	color: $dropbox-blue;
 }
 button {
 	// flex: 1 0 10px;
@@ -22,11 +37,14 @@ button {
 	border: 0;
 	cursor: grab;
 	color: white;
-	background-color: cadetblue;
+	background-color: $dropbox-blue;
 	border-radius: 0.5em;
 	cursor: pointer;
 	transition: 0.2s all linear;
 	&:hover {
 		box-shadow: 0.1em 0.1em 0.1em 0.1em;
 	}
+}
+footer {
+	
 }

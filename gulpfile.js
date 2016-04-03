@@ -29,9 +29,9 @@ gulp.task('scripts', function() {
 gulp.task('serve', ['sass', 'scripts'], function() {
 	browserSync.init({
 		server: {
-			baseDir: './public'
+			baseDir: './'
 		},
-		startPath: '/views/index.html',
+		startPath: 'public/views/index.html',
 		ghostMode: {
 			scroll: false
 		},
