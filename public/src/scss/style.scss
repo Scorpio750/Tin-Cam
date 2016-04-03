@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../src/img/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* VARIABLES */
+$dropbox-blue: #528ED5;
+$font-stack: Roboto, Tahoma, Arial, sans-serif;
+
+html{
+	font-family: $font-stack;
+}
+
+body {
+	background-color: aliceblue;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.main {
+	min-height: 100vh;
+}
+.fa-dropbox {
+	color: $dropbox-blue;
+}
+.push {
+    transition: 0.1s all linear;
+    &:hover {
+        box-shadow: 0.1em 0.1em 0.1em 0.1em;
+        opacity: 1;
+    }
+}
+button {
+	// flex: 1 0 10px;
+	padding: 1em;
+	font-size: 20px;
+	border: 0;
+	cursor: grab;
+	color: white;
+	background-color: $dropbox-blue;
+	border-radius: 0.5em;
+	cursor: pointer;
+	transition: 0.1s all linear;
+}
+footer {
+	padding-left: .5em;
+	font-size: 14px;
+	color: slategrey;
+	// opacity: .8;
+}
