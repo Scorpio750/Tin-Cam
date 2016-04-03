@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/Scorpio750/Tin-Cam/issues"
   },
-  "homepage": "https://github.com/Scorpio750/Tin-Cam#readme"
+  "homepage": "https://github.com/Scorpio750/Tin-Cam#readme",
+  "devDependencies": {
+    "angular-ui-router": "^1.0.0-alpha.1",
+    "browser-sync": "^2.11.2",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "nodemon": "^1.9.1"
+  }
 }
