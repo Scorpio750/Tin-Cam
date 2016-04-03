@@ -3,6 +3,8 @@
 
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Plaster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 	<script src="/node_modules/angular/angular.js"></script>
@@ -10,9 +12,12 @@
 </head>
 
 <body>
-	<div ng-controller="DropBoxCtrl" class="flex main">
-		<i class="fa fa-dropbox fa-5x"></i>
-		<button ng-click="sendToDropBox()">Connect with Dropbox</button>
+	<div ng-controller="DropBoxCtrl" class="main flex">
+	<h1>Tin Cam</h1>
+		<div class="flex circle">
+			<i class="fa fa-dropbox fa-5x"></i>
+			<button ng-click="sendToDropBox()">Connect with Dropbox</button>
+		</div>
 	</div>
 </body>
 <footer>Copyright (c) 2016 Ben Roytenberg, Nelson Gomez, Patrick Wu, Claire Wang </footer>
