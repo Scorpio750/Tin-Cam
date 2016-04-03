@@ -4,12 +4,15 @@
 var tincamApp = angular.module('tincamApp', []);
 
 tincamApp.controller('DropBoxCtrl', function($scope, $window, $q) {
+	// Params
+	var clientID	= 'mmluyluwbkw0iqn',
+		redirectURI = 'https://104.236.17.185:3000/public/index.html';
 	$scope.sendToDropBox = function() {
-		$window.location.href = 'https://www.dropbox.com/1/oauth2/authorize?client_id=mmluyluwbkw0iqn&response_type=code&redirect_uri=http://localhost:3000/public/index.html';
+		$window.location.href = 'https://www.dropbox.com/1/oauth2/authorize?client_id=' + clientID + '&response_type=code&redirect_uri=' + redirectURI;
 	};
 
 	// set up promise to handle token sessions
-	var promise
+	var promise;
 });
 
 /* GSAP Functions */
