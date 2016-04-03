@@ -5,9 +5,9 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
 var config = {
-	sassPath: 'public/src/scss/style.scss',
-	cssDist: 'public/dist/css',
-	jsPath: 'public/src/js'
+	sassPath: 'public/views/src/scss/style.scss',
+	cssDist: 'public/views/dist/css',
+	jsPath: 'public/views/src/js'
 }
 
 gulp.task('sass', function() {
@@ -38,10 +38,10 @@ gulp.task('serve', ['sass', 'scripts'], function() {
 		minify: false
 	});
 
-	gulp.watch('public/src/scss/*.scss', ['sass']);
-	gulp.watch('public/js/*.js', ['scripts']);
-	gulp.watch('public/app.js');
-	gulp.watch(['*.html', 'dist/js/*.js'], {
+	gulp.watch(config.sassPath, ['sass']);
+	gulp.watch(config.jsPath + '*.js', ['scripts']);
+	gulp.watch('public/views/app.js');
+	gulp.watch(['public/views/*.html', 'dist/js/*.js'], {
 		cwd: './'
 	}, reload);
 });
