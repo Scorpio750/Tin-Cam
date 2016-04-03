@@ -28,7 +28,7 @@ h1 {
 	min-height: 100vh;
 	margin: 0 20vw;
 	border-left: 30px inset $dropbox-blue;
-	border-right: 30px inset #A33643;
+	border-right: 30px inset $dropbox-blue;
 }
 .flex {
 	display: flex;
