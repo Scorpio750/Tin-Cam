@@ -40,8 +40,7 @@ gulp.task('serve', ['sass', 'scripts'], function() {
 
 	gulp.watch(config.sassPath, ['sass']);
 	gulp.watch(config.jsPath + '*.js', ['scripts']);
-	gulp.watch('public/app.js');
-	gulp.watch(['public/*.html', 'dist/js/*.js'], {
+	gulp.watch(['public/*.html', 'public/app.js'], {
 		cwd: './'
 	}, reload);
 });

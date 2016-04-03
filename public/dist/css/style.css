@@ -22,13 +22,7 @@ body {
   min-height: 100vh; }
 
 .fa-dropbox {
-  color: #528ED5; }
-
-.push {
-  transition: 0.1s all linear; }
-  .push:hover {
-    box-shadow: 0.1em 0.1em 0.1em 0.1em;
-    opacity: 1; }
+  color: #6DA3E3; }
 
 button {
   padding: 1em;
@@ -36,12 +30,14 @@ button {
   border: 0;
   cursor: grab;
   color: white;
-  background-color: #528ED5;
+  background-color: #6DA3E3;
   border-radius: 0.5em;
-  cursor: pointer;
-  transition: 0.1s all linear; }
+  cursor: pointer; }
+  button:hover {
+    box-shadow: 0.1em 0.1em 0.1em 0.1em; }
 
 footer {
   padding-left: .5em;
   font-size: 14px;
-  color: slategrey; }
+  color: slategrey;
+  opacity: .8; }
