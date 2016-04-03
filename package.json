@@ -1,0 +1,25 @@
+{
+  "name": "tin-cam",
+  "version": "1.0.0",
+  "description": "Wireframe for tin-cam embedded application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scorpio750/Tin-Cam.git"
+  },
+  "keywords": [
+    "altoids",
+    "raspberry",
+    "pi",
+    "angular"
+  ],
+  "author": "Patrick Wu, Ben Roytenberg, Nelson Gomez, Claire Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scorpio750/Tin-Cam/issues"
+  },
+  "homepage": "https://github.com/Scorpio750/Tin-Cam#readme"
+}
