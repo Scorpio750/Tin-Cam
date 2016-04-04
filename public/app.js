@@ -4,6 +4,13 @@
 var tincamApp = angular.module('tincamApp', []);
 
 tincamApp.controller('DropBoxCtrl', function($scope, $window, $q) {
+
+	$scope.changeBorders = function() {
+		var circle = document.getElementsByClassName('circle')[0];
+		console.log(circle);
+		angular.element(circle).css('border-left: 30px inset #8c001a; border-right: 30px inset #8c001a');
+	}
+
 	$scope.sendToDropBox = function() {
 		$window.location.href = 'https://www.dropbox.com/1/oauth2/authorize?client_id=mmluyluwbkw0iqn&response_type=code&redirect_uri=http://localhost:3000/public/index.html';
 	};
